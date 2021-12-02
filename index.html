@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  
+  <title>CHRONOMETRE</title>
+  
+</head>
+<body>
+
+  <div id="app">
+    <div class="outer-container">
+      <div class="inner-container">
+        <h1>CHRONOMETRE</h1>
+        <div class="countdown">
+          <h2>
+            {{ timeLeft }}
+          </h2>
+          <h3>Fin du compteur à <span>{{ endTime }}</span></h3>
+        </div>
+  
+        <ul class="columns-flex">
+          <li v-for="(time, index) in times" :key="index" class="column time">
+            <a v-on:click.prevent="setTime(time.sec)" :class="[
+                  'button',
+                  'is-link',
+                  {'is-active': time.sec === selectedTime && endTime !== 0 }
+                ]">
+              {{ time.display }}
+            </a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
