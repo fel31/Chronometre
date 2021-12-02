@@ -1,0 +1,78 @@
+/* ==================
+ *  MAIN
+ * ================== */
+body {
+  font-family: sans-serif;
+  color: white;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(150, 83, 185, 1) 23%,
+    rgba(142, 84, 191, 1) 42%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.outer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+/* ==================
+ *  APP
+ * ================== */
+.countdown {
+  margin: 5px 0 30px;
+}
+h1 {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+h2 {
+  font-size: 120px;
+  width: 390px;
+  line-height: 1;
+  text-align: center;
+}
+h3 {
+  font-size: 28px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+h3 span {
+  width: 70px;
+  border-bottom: 2px solid hsl(348, 100%, 71%);
+  margin-left: 15px;
+  text-align: center;
+}
+.time {
+  display: flex;
+  justify-content: center;
+}
+.columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.columns-flex {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  background-color: pinch-zoom;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 12px;
+
+  li:hover {
+    cursor: pointer;
+    background-color: white;
+    color: pinch-zoom;
+  }
+}
