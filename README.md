@@ -6,4 +6,5 @@ Projet à voir sur mon codePen
         ---->ici : https://codepen.io/souad__Oueslati/pen/YzrXwVv
         
         
-![Morpion_-_2021-12-14_11 05 22](https://user-images.githubusercontent.com/62654985/145977153-79197666-0216-4419-a6b5-4c7735fb9a3a.png)
+
+![chronometre_-_2021-12-14_16 26 07](https://user-images.githubusercontent.com/62654985/146027609-05c2ff82-8cd0-4e74-b647-d2aee6d927dc.png)
